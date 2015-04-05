@@ -1,0 +1,49 @@
+@import url("../reset.css");
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	background: black;
+	color: white;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+header > ul {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	height: 50px;
+}
+
+
+header li {
+	min-width: min-content;
+	padding: 0 30px;
+	height: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	align-content: flex-start;
+}
+
+header a {
+	color: white;
+}
+
+header ul li:hover {
+	background: white;
+}
+
+header ul li:hover a{
+	color: black;
+}

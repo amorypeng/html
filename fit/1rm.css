@@ -1,0 +1,22 @@
+@import url(".../reset.css");
+
+body {
+	text-align: center;
+	line-height: 30px;
+	margin-top: 50px;
+	box-sizing: border-box;
+}
+
+.result {
+	display: block;
+	height: 40px;
+	margin-top: 15px; margin-bottom: 15px;
+}
+
+label {
+	display: block;
+}
+
+input {
+	width: 75px;
+}

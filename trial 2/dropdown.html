@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="dropdown.css">
+
+<head>
+<script type="text/javascript" src="autoscroll.js"></script>
+</head>
+
+<body>
+	<div class="navbar black">
+		<div class="head">F &Uuml; D</div>
+		<div class="mid">
+		<br><br><br>
+		<a href="#" onclick="return false;" onmousedown="autoScrollTo('div1');">div1</a>
+		<br>
+		<a href="#" onclick="return false;" onmousedown="autoScrollTo('div2');">div2</a>
+		<br>
+		<a href="#" onclick="return false;" onmousedown="autoScrollTo('div3');">div3</a>
+		<br>
+		<a href="#" onclick="return false;" onmousedown="autoScrollTo('div4');">div4</a>
+		<br>
+		</div>
+		<div id="display"></div>
+		
+		
+	</div>
+	
+	<div class="container" id="test">
+		<div class="wrap h100 black" id="div1">
+		
+			<div id="video-container">
+				<video autoplay loop id="bgvid">
+				<source src="http://a.pomf.se/slaend.webm" type="video/webm">
+				</video>
+			</div> 
+		
+			<div class="title vc">
+				<h1>div1</h1>
+			</div>
+		</div>
+		
+		<div class="wrap h50 bg-steak" id="div2">
+			<div class="title vc">
+				<h1>div2</h1>
+				<h2>This is a placeholder text. Insert description here.</h2>
+			</div>
+		</div>
+		
+		<div class="wrap h100 white">
+		
+		</div>
+		
+		
+		<div class="wrap h50 bg-dog" id="div3">
+			<div> div3
+			</div>
+		</div>
+		
+		<div class="wrap h85 white" id="div4">
+			<div>
+				div4
+			</div>
+		</div>
+		
+		<div class="wrap h100 black"></div>
+		
+		
+		
+	</div>
+
+</body>
+</html>

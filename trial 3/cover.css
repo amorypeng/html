@@ -1,0 +1,101 @@
+@import url("../reset.css");
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+html {
+	background: black;
+	font-family: 'Roboto', sans-serif;
+		color: white;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+
+a {
+	display: block;
+	color: white;
+	text-transform: uppercase;
+	height: 50px;
+	font-size: 50px;
+	text-decoration: none;	
+	padding: 10px 50px;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+a:hover{
+	color: rgb(139,0,0);
+	background: white;
+}
+
+.menu{
+	position: fixed;
+	height: 500px;
+	top: 50px;
+	width: 100%;
+}
+
+.foot{
+	position: fixed;
+	bottom: 10px;
+	width:100%;
+	font-size: 14px;
+}
+
+.contact{
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.slider{
+  background-size: cover;
+  background-position: center center;
+  min-height: 100%;
+  width: 100%;
+  background: #111;
+  position: relative;
+  animation: slider 20s infinite;
+  -webkit-animation: slider 12s infinite; /* Safari 4+ */
+  -moz-animation:    slider 12s infinite; /* Fx 5+ */
+  -o-animation:      slider 12s infinite; /* Opera 12+ */
+}
+
+@-webkit-keyframes slider{
+	0%{background: black;}
+	33% {background: white;}
+	66%{background: blue;}
+	100%{background: black;}
+}
+
+@-moz-keyframes slider{
+	0%{background: black;}
+	33% {background: white;}
+	66%{background: blue;}
+	100%{background: black;}
+}
+
+
+@-o-keyframes slider{
+	0%{background: black;}
+	33% {background: white;}
+	66%{background: blue;}
+	100%{background: black;}
+}
+
+
+@keyframes slider{
+/* Image 1 */
+	0%{background: black;}
+	33% {background: white;}
+	66%{background: blue;}
+	100%{background: black;}
+}
+
+
+@media (max-width: 500px){
+	a {
+		width: 100%;
+		
+	}
+}
