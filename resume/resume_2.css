@@ -24,6 +24,10 @@ header{
 	z-index: 9001;
 }
 
+header #menu{
+	height: 100%;
+}
+
 header ul {
 	height: 100%;
 	display: flex;
@@ -31,27 +35,30 @@ header ul {
 }
 
 header li{
-	width: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100%;
-	margin-left: 50px; margin-right: 50px;
+	padding-left: 50px; padding-right: 50px;
 	text-transform: lowercase;
 	font-variant: small-caps;
 }
 
+header a{
+	color: white;
+	text-decoration: none;
+}
+
+
 header li:hover {
 	font-size: 25px;
 }
-
 /* title stuff */
-.title {
+#title {
 	position: relative;
-	margin-top: 70px;
 	display: block;
-	padding-top: 50vh;
-	font-size: 15vw;
+	padding-top: 25vh;
+	font-size: 12vw;
 	background: darkred;
 	color: white;
 	text-transform: uppercase;
