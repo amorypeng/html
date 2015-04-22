@@ -47,7 +47,7 @@ header li{
 }
 
 header a{
-	color: white;
+	color: lightgrey;
 	text-decoration: none;
 }
 #menu-mobile{
@@ -55,8 +55,8 @@ header a{
 }
 
 
-header li:hover {
-	font-size: 28px;
+header a:hover {
+	color: white;
 }
 @media only screen and (max-width: 500px) {
 	#menu-mobile{
@@ -76,20 +76,19 @@ header li:hover {
 
 
 #title {
-	position: relative;
 	display: block;
-	padding-top: 35vh;
+	padding-top: 25vh;
 	font-size: 12vw;
 	background: darkred;
 	color: white;
 	text-transform: uppercase;
 	overflow: hidden;
 	text-align: center;
-	line-height: 10vw;
 }
+
 @media only screen and (max-width: 500px) {
 	#title {
-		padding-top: 30vh;
+		padding-top: 20vh;
 	}
 }
 
@@ -112,3 +111,53 @@ header li:hover {
 	overflow: hidden;
 }
 
+/* about */
+#about {
+	padding-top: 25vh;
+	padding-left: 5%; padding-right: 5%;
+	text-align: center;
+	color: steelblue;
+}
+#about p {
+	line-height: 25px;
+	margin: 0 auto;
+	max-width: 1000px;
+	color: steelblue;
+	font-size: 25px;
+	padding-bottom: 25vh;
+	font-family: 'Quattrocento', serif;
+	}
+
+.butt{
+	position: relative;
+	bottom: -10px;
+	font-size: 12vw;
+	text-transform: uppercase;
+}
+
+#about .butt{	
+	color: forestgreen;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 7vw;
+	line-height: 7vw;
+	padding-bottom: 3vw;
+}
+@media only screen and (max-width: 500px) {
+	#about {
+		padding-top: 15vh;
+		
+		}
+	#about p {
+		font-size: 15px;
+	}
+		
+}
+
+/* resume */
+#resume {
+	background: forestgreen;
+	height: 100vh;
+}
