@@ -46,9 +46,12 @@ header li{
 	
 }
 
+a {
+	text-decoration: none;
+}
+
 header a{
 	color: lightgrey;
-	text-decoration: none;
 }
 #menu-mobile{
 	display:none;
@@ -74,16 +77,20 @@ header a:hover {
 /* title stuff */
 
 
-
+.butt{
+	position: relative;
+	top: -11vw;
+	line-height: -12vw;
+	font-size: 12vw;
+	text-transform: uppercase;
+}
 #title {
 	display: block;
-	padding-top: 25vh;
-	font-size: 12vw;
+	padding-top: 50vh;
 	background: darkred;
 	color: white;
 	text-transform: uppercase;
-	overflow: hidden;
-	text-align: center;
+	
 }
 
 @media only screen and (max-width: 500px) {
@@ -113,30 +120,24 @@ header a:hover {
 
 /* about */
 #about {
-	padding-top: 25vh;
 	padding-left: 5%; padding-right: 5%;
 	text-align: center;
 	color: steelblue;
 }
-#about p {
-	line-height: 25px;
+p {
+	line-height: 35px;
 	margin: 0 auto;
 	max-width: 1000px;
 	color: steelblue;
 	font-size: 25px;
-	padding-bottom: 25vh;
+	padding-bottom: 50vh;
 	font-family: 'Quattrocento', serif;
 	}
 
-.butt{
-	position: relative;
-	bottom: -10px;
-	font-size: 12vw;
-	text-transform: uppercase;
-}
+
 
 #about .butt{	
-	color: forestgreen;
+	color: white;
 }
 
 h2 {
@@ -147,8 +148,6 @@ h2 {
 }
 @media only screen and (max-width: 500px) {
 	#about {
-		padding-top: 15vh;
-		
 		}
 	#about p {
 		font-size: 15px;
@@ -160,4 +159,36 @@ h2 {
 #resume {
 	background: forestgreen;
 	height: 100vh;
+
+	padding-left: 5%; padding-right: 5%;
+	text-align: center;
 }
+#resume .butt {
+	color: forestgreen;
+}
+
+#resume p {
+	color: white;
+}
+h3 {
+	text-transform: uppercase;
+	font-size: 20px;
+	color: white;
+	
+}
+
+
+#resume a {
+	padding: 20px;
+	background: forestgreen;
+	color: white;
+	border: solid white;
+	border-radius: 10px;
+}
+#resume a:hover {
+	background: white;
+	color: forestgreen;
+	
+	border-radius: 10px;
+}
+
