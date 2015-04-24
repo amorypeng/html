@@ -13,6 +13,17 @@ html, body{
 	font-family: 'Oswald', sans-serif;
 }
 /* fixed header */
+.wrap {
+	max-width: 1200px;
+}
+
+.hide{
+	display: none;
+}
+
+.show {
+	display: block;
+}
 
 header{
 	position: fixed;
@@ -43,7 +54,6 @@ header li{
 	justify-content: center;
 	height: 100%;
 	padding-left: 50px; padding-right: 50px;
-	
 }
 
 a {
@@ -55,6 +65,7 @@ header a{
 }
 #menu-mobile{
 	display:none;
+	z-index; 200000;
 }
 
 
@@ -67,9 +78,16 @@ header a:hover {
 		display: flex;
 		height: 100%;
 		align-items: center;
+		color: white;
+	
 	}
 	
-	#menu ul {
+	header ul,li{
+		display: block;
+		background: white;
+	}
+	
+	.menu-toggle{
 		display: none;
 	}
 }
@@ -84,18 +102,18 @@ header a:hover {
 	font-size: 12vw;
 	text-transform: uppercase;
 }
+
 #title {
 	display: block;
-	padding-top: 50vh;
+	padding-top: 100vh;
 	background: darkred;
 	color: white;
 	text-transform: uppercase;
-	
 }
 
 @media only screen and (max-width: 500px) {
 	#title {
-		padding-top: 20vh;
+		padding-top: 30vh;
 	}
 }
 
@@ -127,14 +145,15 @@ header a:hover {
 p {
 	line-height: 35px;
 	margin: 0 auto;
-	max-width: 1000px;
 	color: steelblue;
 	font-size: 25px;
-	padding-bottom: 50vh;
 	font-family: 'Quattrocento', serif;
 	}
 
-
+#about p {
+	padding-top: 10vh;
+	padding-bottom: 35vh;
+}
 
 #about .butt{	
 	color: white;
@@ -146,49 +165,113 @@ h2 {
 	line-height: 7vw;
 	padding-bottom: 3vw;
 }
+
 @media only screen and (max-width: 500px) {
 	#about {
 		}
-	#about p {
-		font-size: 15px;
+	p {
+		font-size: 18px;
+		line-height: 25px;
 	}
-		
+	
+	#about p{
+		padding-top: 5vh;
+		padding-bottom: 15vh;
+	}
 }
 
 /* resume */
 #resume {
 	background: forestgreen;
-	height: 100vh;
-
 	padding-left: 5%; padding-right: 5%;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
 #resume .butt {
 	color: forestgreen;
 }
 
-#resume p {
-	color: white;
-}
-h3 {
-	text-transform: uppercase;
-	font-size: 20px;
-	color: white;
-	
+#resume ul {
+	width: 75%;
 }
 
-
-#resume a {
-	padding: 20px;
-	background: forestgreen;
-	color: white;
-	border: solid white;
-	border-radius: 10px;
-}
-#resume a:hover {
+#resume li {
+	display: flex;
+	flex-flow: row wrap;
 	background: white;
 	color: forestgreen;
-	
-	border-radius: 10px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	font-size: 7vw;
+	padding: 4vw 4vw;
 }
 
+#resume p{
+	color: forestgreen;
+	text-align: left;
+}
+
+#resume li:hover {
+	cursor: crosshair;
+}
+
+#resume a {
+	margin-bottom: 50px;
+	padding: 20px;
+	background: white;
+	color: forestgreen;
+	font-size: 40px;
+	border: solid white;
+	text-align: left;
+}
+
+#resume a:hover {
+	color: darkgreen;
+}
+.title {
+	width: 80%;
+	text-align: left;
+}
+
+.float-right {
+	width: 20%;
+}
+
+/* stolen online */
+.chevron::before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.45em;
+}
+
+.chevron.bottom:before {
+	top: 0;
+	transform: rotate(135deg);
+}
+
+
+@media only screen and (max-width: 500px) {
+	#resume a {
+		margin-bottom: 20px;
+		padding: 12px;
+		font-size: 15px;
+		border: 2.5px solid;
+	}
+	
+	#resume li {
+		margin-bottom: 20px;
+	}
+}
+
+/* Contact */

@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Trial2</title>
+	<!-- jquery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<!--my custom stylesheet -->
 	<link rel="stylesheet" type="text/css" href="resume_2.css">
+	<!--fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
+	<!--mys cripts -->
 	<script type="text/javascript" src="autoscroll.js"></script>
 	<meta name="viewport" content="initial-scale=1">
-	<script type="text/javascript" src="autoscroll.js"></script>
-	<title>Trial2</title>
+	
 </head>
+
 <body>
 <header>
 	<div id="menu">
 	<div id="menu-mobile">Menu</div>
-	<ul>
+	<ul class="menu-toggle">
 		<li><a href="#" onclick="return false;" onmousedown="autoScrollTo('title');">placeholder</a></li>
 		<li><a href="#" onclick="return false;" onmousedown="autoScrollTo('about');">about</a></li>
 		<li><a href="#" onclick="return false;" onmousedown="autoScrollTo('resume');">Resume</a></li>
@@ -36,16 +42,51 @@
 	<div class="butt">Amory Peng</div>
 	<h2>About Me</h2>
 	
-	<p>
+	<p class="wrap">
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et enim fringilla, porttitor sem id, tristique leo. Donec ligula nibh, elementum eu sapien quis, finibus pretium velit. Nunc ultrices sem urna, non fermentum ante bibendum a. Donec nunc ligula, fringilla semper scelerisque eu, sollicitudin sit amet nisl. Mauris eleifend, tortor eget sagittis aliquet, augue diam vehicula neque, non ultrices ante metus nec augue. Maecenas venenatis odio sed tellus tincidunt faucibus. Praesent nisl sem, pellentesque at ornare non, tincidunt laoreet orci. Nam bibendum ullamcorper euismod. Integer molestie maximus odio, non fermentum augue suscipit a. Aenean dignissim orci non libero euismod, quis porttitor nunc suscipit.
 	</p>
 	
 </div>
+
 <div id="resume">
 	<div class="butt">Resume</div>
-	<h3><a href="#" download="#">Download PDF</a></h3>
+	<ul class="wrap">
+		<li class="section">
+			<div class="title">Education</div>
+			<div class="chevron bottom float-right"></div>
+			<p class="hide">Education Description</p>
+		</li>
+		
+		<li class="section">
+			<div class="title">Skills</div>
+			<div class="chevron bottom float-right"></div>
+			<div class="desc hide">Skills Description</div>
+		</li>
+		
+		<li class="section">
+			<div class="title">Experience</div>
+			<div class="chevron bottom float-right"></div>
+			<p class="hide">Maecenas venenatis odio sed tellus tincidunt faucibus. Praesent nisl sem, pellentesque at ornare non, tincidunt laoreet orci. Nam bibendum ullamcorper euismod. Integer molestie maximus odio, non fermentum augue suscipit a. Aenean dignissim orci non libero euismod, quis porttitor nunc suscipit.</p>
+		</li>
+	</ul>
+	
+	<a href="#" download="#">Download PDF</a>
+	
 </div>
 <div id="contact">
 </div>
+
+
+
+<script>
+$( "#menu-mobile" ).click(function() {
+	$( ".menu-toggle" ).toggle();
+});
+
+$( ".section" ).click(function() {
+	$( this ).children().toggleClass( "show" );
+});
+</script>
+
 </body>
 </html>
