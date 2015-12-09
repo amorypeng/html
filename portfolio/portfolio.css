@@ -46,7 +46,7 @@ header {
 .overlay {
 	height: 100%;
 	width: 100%;
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.4);
 }
 
 .header-gs {
@@ -136,9 +136,14 @@ header {
 	position: relative;
 	color: white;
 	text-align: center;
+	cursor: pointer;
+}
+
+.history-child img {
 }
 
 .slidein {
+	z-index: 9999;
 	position: relative;
 	display: block;
 	transition: all 0.5s ease;
@@ -147,6 +152,41 @@ header {
 
 
 
+
+
+#hc-1 {
+	background:#FFDBBE; /*orangish*/
+	background-image:url(grad-cap-white.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70%;
+}
+
+
+#hc-2 {
+	background: #D1EECE; /*greenish*/
+	
+	background-image:url(plant-white.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70%;
+}
+
+#hc-3 {
+	background:	#C5CDE0;/*bluish*/
+	background-image:url(gears-white.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70%;
+}
+
+#hc-4 {
+	background: #FDD8DD; /*pinkish*/
+	background-image:url(cake-white.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70%;
+}
 
 /*medium screens */
 @media all and (min-width: 750px){
@@ -172,30 +212,26 @@ header {
 		transform: translateY(30px);
 		opacity: 1;
 	}
+	
+	#hc-1, #hc-4 {
+		background-size: 40%;
+	}
+	
+	#hc-2 {
+		background-size: 35%;
+	}
+	
+	#hc-3 {
+		background-size: 40%;
+	}
+	
 }
-
-#hc-1 {
-	background:#FFF4DD; /*reddish*/
-}
-
-#hc-2 {
-	background:	#C5CDE0;/*orangeish*/
-}
-
-#hc-3 {
-	background: #FDD8DD; /*bluish*/
-}
-
-#hc-4 {
-	background: #D1EECE; /*greenish*/
-}
-
 
 .hc-title{
 	font-size: 40px;
 	font-variant: small-caps;
 	font-weight: 400;
-	border-bottom: 1px solid white;
+
 }
 
 #contact {
